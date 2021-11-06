@@ -43,15 +43,12 @@
   "gMapGroup_Test": [
     "SpawnPlace",
     "SpawnPlaceMirror",
-    "SCENE_A_0_2",
-    "SCENE_B_0_3",
-    "SCENE_C_0_4",
-    "SCENE_D_0_5",
-    "SCENE_E_0_6"
+    "BLACK_MAP"
   ],
   "TiothMapGroup_Indoor": [
     "TiothMap_Indoor0",
-    "TiothMap_Indoor1"
+    "TiothMap_Indoor1",
+    "POLISH_OFFICE"
   ],
   "TiothMapGroup_IndoorDream": [
     "TiothMap_IndoorDream0"

@@ -13,7 +13,12 @@ SpawnPlace_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE_0:
 
 
 TestAddMoneywithVar::
-	lock
+	fadescreen FADE_TO_BLACK
+	startblackcentermsg 30
+	msgbox TestAddMoneywithVar_Text_0
+	closemessage
+	endblackcentermsg
+	fadescreen FADE_FROM_BLACK
 	release
 	return
 
@@ -311,12 +316,12 @@ TestEmotionMovement27:
 	step_end
 
 TestMugshot::
-	mugshot MUGSHOT_TEST
+	mugshot MUGSHOT_MAJO_CRY
 	usedialog LEFT_ARROW
 	msgbox TestMugshot_Text_0
 	usedialog LEFT_BUBBLE
 	msgbox TestMugshot_Text_1
-	mugshot MUGSHOT_TEST2, RIGHT
+	mugshot MUGSHOT_WAIFU_THUGLIFE, RIGHT
 	usedialog RIGHT_ARROW
 	msgbox TestMugshot_Text_2
 	usedialog RIGHT_BUBBLE
@@ -349,6 +354,9 @@ TestNewMugshot::
 	giveitem ITEM_MIRROR_OF_MIND, 1
 	return
 
+
+TestAddMoneywithVar_Text_0:
+	.string "测试$"
 
 Test2v2TrainerBattle_Text_0:
 	.string "测试双打。$"

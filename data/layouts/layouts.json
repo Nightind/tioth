@@ -4522,54 +4522,24 @@
       "blockdata_filepath": "data/layouts/yslq_c1_chun_3_05/map.bin"
     },
     {
-      "id": "LAYOUT_SCENE_A_0_2",
-      "name": "SCENE_A_0_2_Layout",
-      "width": 10,
-      "height": 10,
+      "id": "LAYOUT_BLACK_MAP",
+      "name": "BLACK_MAP_Layout",
+      "width": 1,
+      "height": 1,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/SCENE_A_0_2/border.bin",
-      "blockdata_filepath": "data/layouts/SCENE_A_0_2/map.bin"
+      "border_filepath": "data/layouts/BLACK_MAP/border.bin",
+      "blockdata_filepath": "data/layouts/BLACK_MAP/map.bin"
     },
     {
-      "id": "LAYOUT_SCENE_B_0_3",
-      "name": "SCENE_B_0_3_Layout",
-      "width": 10,
-      "height": 10,
+      "id": "LAYOUT_POLISH_OFFICE",
+      "name": "POLISH_OFFICE_Layout",
+      "width": 20,
+      "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/SCENE_B_0_3/border.bin",
-      "blockdata_filepath": "data/layouts/SCENE_B_0_3/map.bin"
-    },
-    {
-      "id": "LAYOUT_SCENE_C_0_4",
-      "name": "SCENE_C_0_4_Layout",
-      "width": 10,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/SCENE_C_0_4/border.bin",
-      "blockdata_filepath": "data/layouts/SCENE_C_0_4/map.bin"
-    },
-    {
-      "id": "LAYOUT_SCENE_D_0_5",
-      "name": "SCENE_D_0_5_Layout",
-      "width": 10,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/SCENE_D_0_5/border.bin",
-      "blockdata_filepath": "data/layouts/SCENE_D_0_5/map.bin"
-    },
-    {
-      "id": "LAYOUT_SCENE_E_0_6",
-      "name": "SCENE_E_0_6_Layout",
-      "width": 10,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/SCENE_E_0_6/border.bin",
-      "blockdata_filepath": "data/layouts/SCENE_E_0_6/map.bin"
+      "border_filepath": "data/layouts/POLISH_OFFICE/border.bin",
+      "blockdata_filepath": "data/layouts/POLISH_OFFICE/map.bin"
     }
   ]
 }

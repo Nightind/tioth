@@ -8,15 +8,12 @@
 // gMapGroup_Test
 #define MAP_SPAWN_PLACE        (0 | (0 << 8))
 #define MAP_SPAWN_PLACE_MIRROR (1 | (0 << 8))
-#define MAP_SCENE_A_0_2        (2 | (0 << 8))
-#define MAP_SCENE_B_0_3        (3 | (0 << 8))
-#define MAP_SCENE_C_0_4        (4 | (0 << 8))
-#define MAP_SCENE_D_0_5        (5 | (0 << 8))
-#define MAP_SCENE_E_0_6        (6 | (0 << 8))
+#define MAP_BLACK_MAP          (2 | (0 << 8))
 
 // TiothMapGroup_Indoor
 #define MAP_TIOTH_MAP_INDOOR0 (0 | (1 << 8))
 #define MAP_TIOTH_MAP_INDOOR1 (1 | (1 << 8))
+#define MAP_POLISH_OFFICE     (2 | (1 << 8))
 
 // TiothMapGroup_IndoorDream
 #define MAP_TIOTH_MAP_INDOOR_DREAM0 (0 | (2 << 8))
