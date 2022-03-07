@@ -182,6 +182,7 @@
 #define MON_DATA_SPEED2            86
 #define MON_DATA_SPATK2            87
 #define MON_DATA_SPDEF2            88
+#define MON_DATA_TALENT            89
 
 // Ribbon IDs used by TV and Pokénav
 #define CHAMPION_RIBBON       0
@@ -307,6 +308,7 @@
 #define FLAG_DMG_IN_AIR             (1 << 23) // If target is in the air, can hit.
 #define FLAG_DMG_UNGROUNDED_IGNORE_TYPE_IF_FLYING (1 << 24) // Makes a Ground type move do 1x damage to flying and levitating targets
 #define FLAG_THAW_USER              (1 << 25)
+#define FLAG_RIDER_KICK_BOOST       (1 << 26)
 
 // Split defines.
 #define SPLIT_PHYSICAL  0x0
@@ -371,6 +373,8 @@
 #define EVO_TRADE_SPECIFIC_MON            31     // Pokémon is traded for a specified Pokémon
 #define EVO_SPECIFIC_MAP                  32     // Pokémon levels up on specified map
 #define EVO_RANDOM_CHANCE                 33     // Pokémon levels up, having chance to proceed branch
+#define EVO_LEVEL_STEEL_TYPE_MON_IN_PARTY 34     //钢系同行进化
+#define EVO_LEVEL_SANDSTORM               35     //沙暴天气进化
 
 #define EVOS_PER_MON 10
 

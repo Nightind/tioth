@@ -954,14 +954,16 @@ static const u8 sUproarDescription[] = _(
 "双方都无法睡着。");
 
 static const u8 sStockpileDescription[] = _(
+"提高自己防御和特防，\n"
 "最大能蓄力3次。");
 
 static const u8 sSpitUpDescription[] = _(
-    "Releases stockpiled power\n"
-    "(the more the better).");
+"喷出积蓄的能量\n"
+"积蓄越多威力越大。");
 
 static const u8 sSwallowDescription[] = _(
-"吞入积蓄的力量，能回复HP。");
+"吞入积蓄的力量，\n"
+"能回复HP。");
 
 static const u8 sHeatWaveDescription[] = _(
 "用灼热的气息吹向对方，\n"
@@ -2851,6 +2853,14 @@ static const u8 sEERIE_SPELLDescription[] = _(
 "用强大的精神力量攻击。\n"
 "对手最后用的招式减少3PP。");
 
+static const u8 sSWELLHEAD_PUNISHMENTDescription[] = _(
+"降龙十八掌第一式。\n"
+"使对手被追加龙属性。");
+
+static const u8 sTOXIC_DOOMDescription[] = _(
+"释放自身所有毒素，\n"
+"但之后会无法战斗。");
+
 static const u8 sNotDoneYetDescription[] = _(
 "技能效果未实装。");
 
@@ -3613,4 +3623,8 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_GLACIAL_LANCE - 1] = sGLACIAL_LANCEDescription,
     [MOVE_ASTRAL_BARRAGE - 1] = sASTRAL_BARRAGEDescription,
     [MOVE_EERIE_SPELL - 1] = sEERIE_SPELLDescription,
+
+    //TIOTH
+    [MOVE_SWELLHEAD_PUNISHMENT - 1] = sSWELLHEAD_PUNISHMENTDescription,
+    [MOVE_TOXIC_DOOM - 1] = sTOXIC_DOOMDescription,
 };

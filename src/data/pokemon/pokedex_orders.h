@@ -923,6 +923,8 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_ZUBAT,
     NATIONAL_DEX_ZWEILOUS,
     NATIONAL_DEX_ZYGARDE,
+    //tioth
+    NATIONAL_DEX_TIOTHCHARLEN,
 };
 
 const u16 gPokedexOrder_Weight[] =
@@ -1966,6 +1968,12 @@ const u16 gPokedexOrder_Weight[] =
     //NATIONAL_DEX_GROUDON, // Primal
     NATIONAL_DEX_COSMOEM,
     NATIONAL_DEX_CELESTEELA,
+    //-----------------苍穹图鉴体重排序临时位置-----------------
+    //查伦（范例）
+    NATIONAL_DEX_TIOTHCHARLEN, //48.4kg
+    //XX精灵
+
+    //-----------------结束-----------------------
 };
 
 const u16 gPokedexOrder_Height[] =
@@ -3039,4 +3047,10 @@ const u16 gPokedexOrder_Height[] =
     NATIONAL_DEX_WAILORD,
 
     NATIONAL_DEX_ETERNATUS,
+    //-----------------苍穹图鉴身高排序临时位置-----------------
+    //查伦（范例）
+    NATIONAL_DEX_TIOTHCHARLEN, //1.6m
+    //XX精灵
+
+    //----------------------结束---------------------
 };

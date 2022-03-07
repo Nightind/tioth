@@ -21,8 +21,10 @@
 #define MUGSHOT_WAIFU_SPEECHLESS    16
 #define MUGSHOT_WAIFU_STAREYES      17
 #define MUGSHOT_HXYJ                18
+#define MUGSHOT_BRENDAN             19
+#define MUGSHOT_OLDMAN1             20
 
-#define MUGSHOT_END                 18
+#define MUGSHOT_END                 20
 
 #define MUGSHOT_COUNT   (MUGSHOT_END - MUGSHOT_START + 1)
 

@@ -161,7 +161,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_CROCONAW] = _("蓝鳄"),
     [SPECIES_FERALIGATR] = _("大力鳄"),
     [SPECIES_SENTRET] = _("尾立"),
-    [SPECIES_FURRET] = _("大尾立"),
+    [SPECIES_FURRET] = _("鬼化大尾立"),
     [SPECIES_HOOTHOOT] = _("咕咕"),
     [SPECIES_NOCTOWL] = _("猫头夜鹰"),
     [SPECIES_LEDYBA] = _("芭瓢虫"),
@@ -800,7 +800,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_KARTANA] = _("纸御剑"),
     [SPECIES_GUZZLORD] = _("恶食大王"),
     [SPECIES_NECROZMA] = _("奈克洛兹玛"),
-    [SPECIES_MAGEARNA] = _("玛机雅娜"),
+    [SPECIES_MAGEARNA] = _("机巧洛托姆"),
     [SPECIES_MARSHADOW] = _("玛夏多"),
     [SPECIES_POIPOLE] = _("毒贝比"),
     [SPECIES_NAGANADEL] = _("四颚针龙"),
@@ -864,7 +864,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_OBSTAGOON] = _("堵拦熊"),
     [SPECIES_PERRSERKER] = _("喵头目"),
     [SPECIES_CURSOLA] = _("魔灵珊瑚"),
-    [SPECIES_SIRFETCHD] = _("葱游兵"),
+    [SPECIES_SIRFETCHD] = _("铳游兵"),
     [SPECIES_MR_RIME] = _("踏冰人偶"),
     [SPECIES_RUNERIGUS] = _("迭失板"),
     [SPECIES_MILCERY] = _("小仙奶"),
@@ -1236,7 +1236,7 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_NECROZMA_DAWN_WINGS] = _("奈克洛兹玛"),
     [SPECIES_NECROZMA_ULTRA] = _("奈克洛兹玛"),
     // Magearna
-    [SPECIES_MAGEARNA_ORIGINAL_COLOR] = _("玛机雅娜"),
+    [SPECIES_MAGEARNA_ORIGINAL_COLOR] = _("机巧洛托姆"),
     // Cramorant
     [SPECIES_CRAMORANT_GULPING] = _("古月鸟"),
     [SPECIES_CRAMORANT_GORGING] = _("古月鸟"),
@@ -1274,4 +1274,8 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = _("蕾冠王"),
     [SPECIES_CALYREX_SHADOW_RIDER] = _("蕾冠王"),
+
+    //----------------苍穹精灵名字中文----------------
+    [SPECIES_TIOTHCHARLEN] = _("查伦"),
+    //-------------------结束---------------------
 };

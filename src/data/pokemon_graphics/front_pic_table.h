@@ -1273,6 +1273,13 @@ const struct CompressedSpriteSheet gMonFrontPicTable[] =
     SPECIES_SPRITE(CALYREX_SHADOW_RIDER, gMonFrontPic_CalyrexShadowRider),
 
     SPECIES_SPRITE(EGG, gMonFrontPic_Egg),
+//-----------苍穹正面图表格-------------
+//查伦（范例）
+    SPECIES_SPRITE(TIOTHCHARLEN,gMonFrontPic_Tiothcharlen),
+//XX精灵
+
+//---------------结束------------------
+
 };
 
 const struct CompressedSpriteSheet gMonFrontPicTableFemale[] =

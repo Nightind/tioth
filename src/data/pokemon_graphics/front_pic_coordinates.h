@@ -6107,4 +6107,13 @@ const struct MonCoords gMonFrontPicCoords[] =
         .size = 0x33,
         .y_offset = 20,
     },
+//-----------------苍穹精灵图片大小和定位---------------
+//查伦
+    [SPECIES_TIOTHCHARLEN] = {
+        .size = 0x78,
+        .y_offset = 0,
+    },
+//XX精灵
+
+//------------------结束---------------------
 };

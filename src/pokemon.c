@@ -1211,6 +1211,12 @@ const u16 gSpeciesToNationalPokedexNum[NUM_SPECIES] = // Assigns all species to 
     SPECIES_TO_NATIONAL(GLASTRIER),
     SPECIES_TO_NATIONAL(SPECTRIER),
     SPECIES_TO_NATIONAL(CALYREX),
+    //-----------------苍穹全国图鉴添加------------------
+    //查伦（范例）
+    SPECIES_TO_NATIONAL(TIOTHCHARLEN),
+    //XX精灵
+
+    //-----------------结束--------------------
 
     // Megas
     [SPECIES_VENUSAUR_MEGA - 1] = NATIONAL_DEX_VENUSAUR,
@@ -2768,6 +2774,8 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_ROTOM_FAN - 1]     = ANIM_FIGURE_8,
     [SPECIES_ROTOM_MOW - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_ROTOM_WASH - 1]    = ANIM_V_SQUISH_AND_BOUNCE,
+    //TIOTH 
+    [SPECIES_TIOTHCHARLEN - 1] = ANIM_V_SQUISH_AND_BOUNCE,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -3738,7 +3746,7 @@ void CalculateMonStats(struct Pokemon *mon)
         level = 50;
 #endif
 
-    if (species == SPECIES_SHEDINJA)
+    if (species == SPECIES_TIOTHCHARLEN)
     {
         newMaxHP = 1;
     }
@@ -3760,7 +3768,7 @@ void CalculateMonStats(struct Pokemon *mon)
     CALC_STAT(baseSpAttack, spAttackIV, spAttackEV, STAT_SPATK, MON_DATA_SPATK)
     CALC_STAT(baseSpDefense, spDefenseIV, spDefenseEV, STAT_SPDEF, MON_DATA_SPDEF)
 
-    if (species == SPECIES_SHEDINJA)
+    if (species == SPECIES_TIOTHCHARLEN)
     {
         if (currentHP != 0 || oldMaxHP == 0)
             currentHP = 1;
@@ -6383,9 +6391,29 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, u
                     }
                 }
                 break;
+            case EVO_LEVEL_STEEL_TYPE_MON_IN_PARTY:
+                if (gEvolutionTable[species][i].param <= level)
+                {
+                    for (j = 0; j < PARTY_SIZE; j++)
+                    {
+                        u16 currSpecies = GetMonData(&gPlayerParty[j], MON_DATA_SPECIES, NULL);
+                        if (gBaseStats[currSpecies].type1 == TYPE_STEEL
+                         || gBaseStats[currSpecies].type2 == TYPE_STEEL)
+                        {
+                            targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                            break;
+                        }
+                    }
+                }
+                break;
             case EVO_LEVEL_RAIN:
                 j = GetCurrentWeather();
                 if (j == WEATHER_RAIN || j == WEATHER_RAIN_THUNDERSTORM || j == WEATHER_DOWNPOUR)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+            case EVO_LEVEL_SANDSTORM:
+                j = GetCurrentWeather();
+                if (j == WEATHER_SANDSTORM_ANY)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             case EVO_MAPSEC:

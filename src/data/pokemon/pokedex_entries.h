@@ -596,7 +596,7 @@ const struct PokedexEntry gPokedexEntries[] =
                 },
         [NATIONAL_DEX_PSYDUCK] =
                 {
-                        .categoryName = _("鸭"),
+                        .categoryName = _("鸭子"),
                         .height = 8,
                         .weight = 196,
                         .description = gPsyduckPokedexText,
@@ -1784,7 +1784,7 @@ const struct PokedexEntry gPokedexEntries[] =
                 },
         [NATIONAL_DEX_FURRET] =
                 {
-                        .categoryName = _("长身"),
+                        .categoryName = _("长躯干"),
                         .height = 18,
                         .weight = 325,
                         .description = gFurretPokedexText,
@@ -6153,7 +6153,7 @@ const struct PokedexEntry gPokedexEntries[] =
                 {
                         .categoryName = _("蜕皮"),
                         .height = 6,
-                        .weight = 118,
+                        .weight = 119,
                         .description = gScraggyPokedexText,
                         .pokemonScale = 345,
                         .pokemonOffset = 17,
@@ -6163,8 +6163,8 @@ const struct PokedexEntry gPokedexEntries[] =
         [NATIONAL_DEX_SCRAFTY] =
                 {
                         .categoryName = _("恶党"),
-                        .height = 11,
-                        .weight = 300,
+                        .height = 12,
+                        .weight = 309,
                         .description = gScraftyPokedexText,
                         .pokemonScale = 280,
                         .pokemonOffset = 6,
@@ -8813,7 +8813,7 @@ const struct PokedexEntry gPokedexEntries[] =
                 },
         [NATIONAL_DEX_MAGEARNA] =
                 {
-                        .categoryName = _("人造"),
+                        .categoryName = _("等离子宝可梦"),
                         .height = 10,
                         .weight = 805,
                         .description = gMagearnaPokedexText,
@@ -9309,8 +9309,8 @@ const struct PokedexEntry gPokedexEntries[] =
         [NATIONAL_DEX_ARROKUDA] =
                 {
                         .categoryName = _("突击"),
-                        .height = 7,
-                        .weight = 69,
+                        .height = 5,
+                        .weight = 10,
                         .description = gArrokudaPokedexText,
                         .pokemonScale = 356,
                         .pokemonOffset = 17,
@@ -9320,8 +9320,8 @@ const struct PokedexEntry gPokedexEntries[] =
         [NATIONAL_DEX_BARRASKEWDA] =
                 {
                         .categoryName = _("穿刺"),
-                        .height = 7,
-                        .weight = 69,
+                        .height = 13,
+                        .weight = 300,
                         .description = gBarraskewdaPokedexText,
                         .pokemonScale = 356,
                         .pokemonOffset = 17,
@@ -9790,6 +9790,21 @@ const struct PokedexEntry gPokedexEntries[] =
                         .trainerScale = 256,
                         .trainerOffset = 0,
                 },
+//---------------------苍穹精灵图鉴信息位置----------------------
+//查伦（范例）
+        [NATIONAL_DEX_TIOTHCHARLEN] =
+                {
+                        .categoryName = _("被遗弃"),
+                        .height = 16, //身高
+                        .weight = 484, //体重
+                        .description = gTiothCharlenPokedexText, //图鉴描述文本
+                        .pokemonScale = 256, //宝可梦大小，正常大小256
+                        .pokemonOffset = 0, //位置（可能有些精灵会浮空？需要调整这个）
+                        .trainerScale = 256, //训练师大小比对，正常大小为256，类似吼鲸王这类巨大的就需要把训练师调小来对比
+                        .trainerOffset = 0, //训练师位置
+                },
+//XX精灵
 
+//-----------------------------结束-----------------------------
 
 };
